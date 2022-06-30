@@ -36,4 +36,4 @@ CREATE TABLE IF NOT EXISTS comments (
 
 -- Create initial admin user (password: admin123)
 INSERT INTO users (username, email, password, is_admin) VALUES 
-('admin', 'admin@example.com', '$2y$10$8tPbzqmvKPa.Iu0iFE5kEuqOGsF3SHuFxhHzx7CMZqFKoQgBQhqPi', TRUE); 
+('admin', 'admin@example.com', '$2y$10$8tPbzqmvKPa.Iu0iFE5kEuqOGsF3SHuFxhHzx7CMZqFKoQgBQhqPi', TRUE); #  
