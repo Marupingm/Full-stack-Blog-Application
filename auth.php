@@ -232,4 +232,4 @@ $is_signup = isset($_GET['signup']);
         });
     </script>
 </body>
-</html> 
+</html> //  
