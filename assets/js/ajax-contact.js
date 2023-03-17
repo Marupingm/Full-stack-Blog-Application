@@ -38,4 +38,4 @@
             .fail(fail_func);
     });
 
-})(jQuery);
+})(jQuery);//  
