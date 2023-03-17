@@ -33,4 +33,4 @@ INSERT INTO categories (name, slug) VALUES
 ('Lifestyle', 'lifestyle'),
 ('Travel', 'travel'),
 ('Food', 'food'),
-('Health', 'health'); 
+('Health', 'health'); #  
