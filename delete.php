@@ -32,4 +32,4 @@ $stmt->execute([$post_id]);
 // Redirect to homepage
 header("Location: index.php");
 exit();
-?> 
+?> //  
