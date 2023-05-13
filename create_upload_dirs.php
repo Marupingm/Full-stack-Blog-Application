@@ -31,4 +31,4 @@ EOT;
 file_put_contents('uploads/.htaccess', $htaccess);
 echo "Created .htaccess file in uploads directory\n";
 
-echo "\nSetup completed successfully!"; 
+echo "\nSetup completed successfully!"; //  
