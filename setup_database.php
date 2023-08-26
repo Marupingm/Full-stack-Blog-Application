@@ -48,4 +48,4 @@ try {
     echo "Database setup completed successfully!";
 } catch (PDOException $e) {
     die("Database setup failed: " . $e->getMessage());
-} 
+} //  
