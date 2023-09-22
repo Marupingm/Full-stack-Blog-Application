@@ -36,4 +36,4 @@ imagepng($post_image, 'uploads/posts/default.jpg');
 imagedestroy($post_image);
 
 echo "Default images created successfully!";
-?> 
+?> //  
