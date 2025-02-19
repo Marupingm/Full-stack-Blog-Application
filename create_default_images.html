@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Default Images</title>
+</head>
+<body>
+    <canvas id="profileCanvas" width="200" height="200" style="display: none;"></canvas>
+    <canvas id="postCanvas" width="800" height="400" style="display: none;"></canvas>
+    
+    <script>
+        // Create profile image
+        const profileCanvas = document.getElementById('profileCanvas');
+        const profileCtx = profileCanvas.getContext('2d');
+        
+        // Background
+        profileCtx.fillStyle = '#eeeeee';
+        profileCtx.fillRect(0, 0, 200, 200);
+        
+        // Text
+        profileCtx.fillStyle = '#666666';
+        profileCtx.font = '16px Arial';
+        profileCtx.textAlign = 'center';
+        profileCtx.fillText('No Profile', 100, 90);
+        profileCtx.fillText('Image', 100, 110);
+        
+        // Create post image
+        const postCanvas = document.getElementById('postCanvas');
+        const postCtx = postCanvas.getContext('2d');
+        
+        // Background
+        postCtx.fillStyle = '#eeeeee';
+        postCtx.fillRect(0, 0, 800, 400);
+        
+        // Text
+        postCtx.fillStyle = '#666666';
+        postCtx.font = '24px Arial';
+        postCtx.textAlign = 'center';
+        postCtx.fillText('No Post Image', 400, 200);
+        
+        // Download images
+        function downloadImage(canvas, filename) {
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+        
+        // Download both images
+        downloadImage(profileCanvas, 'default_profile.png');
+        downloadImage(postCanvas, 'default_post.png');
+    </script>
+</body>
+</html> 
